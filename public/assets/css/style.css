@@ -12438,7 +12438,7 @@ ul.rbt-dropdown-menu.currency-menu li .sub-menu {
 
 @media only screen and (min-width: 768px) and (max-width: 991px) {
   .rbt-header-top-2.header-top-2 .header-right {
-    justify-content: end;
+    justify-content: flex-end;
   }
 }
 
@@ -12771,7 +12771,7 @@ ul.rbt-dropdown-menu.currency-menu li .sub-menu {
 }
 
 .mainbar-row.rbt-navigation-end .rbt-main-navigation {
-  justify-content: end;
+  justify-content: flex-end;
 }
 
 .mainbar-row.rbt-navigation-start .rbt-main-navigation {
@@ -30235,7 +30235,7 @@ Course Sidebar
 
 .rbt-tutor-information {
   display: flex;
-  align-items: end;
+  align-items: flex-end;
   justify-content: space-between;
   position: absolute;
   bottom: 30px;
