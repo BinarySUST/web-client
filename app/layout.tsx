@@ -13,7 +13,7 @@ import '@/public/assets/css/plugins/animation.css'
 import '@/public/assets/css/plugins/bootstrap-select.min.css'
 import '@/public/assets/css/plugins/jquery-ui.css'
 import '@/public/assets/css/plugins/magnigy-popup.min.css'
-import '@/public/assets/css/plugins/plyr.css'
+// import '@/public/assets/css/plugins/plyr.css'
 import '@/public/assets/css/style.css'
 // global css
 import '@/styles/globals.css';
@@ -40,7 +40,9 @@ export default function RootLayout({
         <Header />
         <MobileMenu />
 
-        {children}
+        <main>
+          {children}
+        </main>
 
         <Footer />
         <BackToTop />

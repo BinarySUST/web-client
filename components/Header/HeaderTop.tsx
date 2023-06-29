@@ -1,3 +1,4 @@
+import Link from "next/link"
 
 const HeaderTop = () => {
     return (
@@ -9,7 +10,7 @@ const HeaderTop = () => {
                             <div className="header-info">
                                 <ul className="rbt-information-list">
                                     <li>
-                                        <a href="#"><i className="feather-phone" />+1-202-555-0174</a>
+                                        <a href="tel:+8801781517797"><i className="feather-phone" />+8801781517797</a>
                                     </li>
                                 </ul>
                             </div>
@@ -25,15 +26,6 @@ const HeaderTop = () => {
                                     <li>
                                         <a href="#"><i className="fab fa-linkedin-in" /></a>
                                     </li>
-                                    <li>
-                                        <a href="#"><i className="fab fa-instagram" /></a>
-                                    </li>
-                                    <li>
-                                        <a href="#"><i className="fab fa-skype" /></a>
-                                    </li>
-                                    <li>
-                                        <a href="#"><i className="fab fa-youtube" /></a>
-                                    </li>
                                 </ul>
                             </div>
                         </div>
@@ -42,7 +34,6 @@ const HeaderTop = () => {
                         <div className="rbt-header-content">
                             <div className="header-info">
                                 <ul className="rbt-secondary-menu">
-                                    <li><a href="my-account.html">My Account</a></li>
                                     <li><a href="#">FAQ</a></li>
                                     <li><a href="contact.html">Contact Us</a></li>
                                     <li><a href="privacy-policy.html">Privacy Policy</a></li>
@@ -52,9 +43,9 @@ const HeaderTop = () => {
                             <div className="rbt-separator" />
                             <div className="header-info">
                                 <div className="header-right-btn d-flex">
-                                    <a className="rbt-btn rbt-switch-btn btn-gradient btn-xs" href="#">
+                                    <Link className="rbt-btn rbt-switch-btn btn-gradient btn-xs" href="/register">
                                         <span data-text="Join Now">Join Now</span>
-                                    </a>
+                                    </Link>
                                 </div>
                             </div>
                         </div>

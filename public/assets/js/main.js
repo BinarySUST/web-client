@@ -1114,17 +1114,8 @@
                 $('.rbt-lesson-leftsidebar').toggleClass('sibebar-none');
             })
         }
-
-
-
-
-
-
-
     }
     eduJs.i();
-
-
 })(window, document, jQuery);
 
 
