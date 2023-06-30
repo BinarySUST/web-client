@@ -14,7 +14,7 @@ export default function StudentDashboardPage() {
                                     <i className="feather-book-open" />
                                 </div>
                                 <div className="content">
-                                    <h3 className="counter without-icon color-primary"><span className="odometer" data-count={30}>00</span>
+                                    <h3 className="counter without-icon color-primary"><span className="odometer" data-count={30}>30</span>
                                     </h3>
                                     <span className="rbt-title-style-2 d-block">Enrolled Courses</span>
                                 </div>
@@ -30,7 +30,7 @@ export default function StudentDashboardPage() {
                                     <i className="feather-monitor" />
                                 </div>
                                 <div className="content">
-                                    <h3 className="counter without-icon color-secondary"><span className="odometer" data-count={10}>00</span>
+                                    <h3 className="counter without-icon color-secondary"><span className="odometer" data-count={10}>10</span>
                                     </h3>
                                     <span className="rbt-title-style-2 d-block">ACTIVE COURSES</span>
                                 </div>
@@ -46,7 +46,7 @@ export default function StudentDashboardPage() {
                                     <i className="feather-award" />
                                 </div>
                                 <div className="content">
-                                    <h3 className="counter without-icon color-violet"><span className="odometer" data-count={7}>00</span>
+                                    <h3 className="counter without-icon color-violet"><span className="odometer" data-count={7}>7</span>
                                     </h3>
                                     <span className="rbt-title-style-2 d-block">Completed Courses</span>
                                 </div>

@@ -37,10 +37,10 @@ const Menu = () => {
                                         </div>
                                         <ul className="user-list-wrapper">
                                             <li>
-                                                <a href="instructor-dashboard.html">
+                                                <Link href="/dashboard">
                                                     <i className="feather-home" />
                                                     <span>My Dashboard</span>
-                                                </a>
+                                                </Link>
                                             </li>
 
 
