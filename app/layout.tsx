@@ -48,35 +48,35 @@ export default function RootLayout({
         <BackToTop />
 
         {/* <!-- Modernizer JS --> */}
-        <Script src="assets/js/vendor/modernizr.min.js" />
+        <Script src="/assets/js/vendor/modernizr.min.js" />
         {/* <!-- jQuery JS --> */}
-        <Script src="assets/js/vendor/jquery.js"></Script>
+        <Script src="/assets/js/vendor/jquery.js"></Script>
         {/* <!-- Bootstrap JS --> */}
-        <Script src="assets/js/vendor/bootstrap.min.js"></Script>
+        <Script src="/assets/js/vendor/bootstrap.min.js"></Script>
         {/* <!-- sal.js --> */}
-        <Script src="assets/js/vendor/sal.js"></Script>
-        <Script src="assets/js/vendor/swiper.js"></Script>
-        <Script src="assets/js/vendor/magnify.min.js"></Script>
-        <Script src="assets/js/vendor/jquery-appear.js"></Script>
-        <Script src="assets/js/vendor/odometer.js"></Script>
-        <Script src="assets/js/vendor/backtotop.js"></Script>
-        <Script src="assets/js/vendor/isotop.js"></Script>
-        <Script src="assets/js/vendor/imageloaded.js"></Script>
+        <Script src="/assets/js/vendor/sal.js"></Script>
+        <Script src="/assets/js/vendor/swiper.js"></Script>
+        <Script src="/assets/js/vendor/magnify.min.js"></Script>
+        <Script src="/assets/js/vendor/jquery-appear.js"></Script>
+        <Script src="/assets/js/vendor/odometer.js"></Script>
+        <Script src="/assets/js/vendor/backtotop.js"></Script>
+        <Script src="/assets/js/vendor/isotop.js"></Script>
+        <Script src="/assets/js/vendor/imageloaded.js"></Script>
 
-        <Script src="assets/js/vendor/wow.js"></Script>
-        <Script src="assets/js/vendor/waypoint.min.js"></Script>
+        <Script src="/assets/js/vendor/wow.js"></Script>
+        <Script src="/assets/js/vendor/waypoint.min.js"></Script>
         {/* <Script src="assets/js/vendor/easypie.js"></Script> */}
-        <Script src="assets/js/vendor/text-type.js"></Script>
-        <Script src="assets/js/vendor/jquery-one-page-nav.js"></Script>
-        <Script src="assets/js/vendor/bootstrap-select.min.js"></Script>
-        <Script src="assets/js/vendor/jquery-ui.js"></Script>
-        <Script src="assets/js/vendor/magnify-popup.min.js"></Script>
-        <Script src="assets/js/vendor/paralax-scroll.js"></Script>
-        <Script src="assets/js/vendor/paralax.min.js"></Script>
-        <Script src="assets/js/vendor/countdown.js"></Script>
+        <Script src="/assets/js/vendor/text-type.js"></Script>
+        <Script src="/assets/js/vendor/jquery-one-page-nav.js"></Script>
+        <Script src="/assets/js/vendor/bootstrap-select.min.js"></Script>
+        <Script src="/assets/js/vendor/jquery-ui.js"></Script>
+        <Script src="/assets/js/vendor/magnify-popup.min.js"></Script>
+        <Script src="/assets/js/vendor/paralax-scroll.js"></Script>
+        <Script src="/assets/js/vendor/paralax.min.js"></Script>
+        <Script src="/assets/js/vendor/countdown.js"></Script>
         {/* <Script src="assets/js/vendor/plyr.js"></Script> */}
         {/* <!-- Main JS --> */}
-        <Script src="assets/js/main.js"></Script>
+        <Script src="/assets/js/main.js"></Script>
       </body>
     </html>
   )
