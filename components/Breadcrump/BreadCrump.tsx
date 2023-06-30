@@ -3,7 +3,6 @@ import React from 'react'
 
 interface Props {
     title: string
-    description?: string
 }
 
 const BreadCrump: React.FC<Props> = ({ title }) => {

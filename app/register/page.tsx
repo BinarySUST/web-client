@@ -3,13 +3,13 @@ import Register from "@/modules/Register/Register";
 
 
 export const metadata = {
-    title: 'Register',
+    title: 'Register || Binary SUST',
 };
 
 export default function RegisterPage() {
     return (
         <>
-            {/* <BreadCrump title="Register" /> */}
+            <BreadCrump title="Register" />
             <Register />
         </>
 

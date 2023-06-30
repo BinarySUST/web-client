@@ -5,15 +5,13 @@ import { SubmitHandler, useForm } from "react-hook-form";
 
 type Inputs = {
     email: string,
-    username: string,
     password: string,
-    confirmPassword: string
 };
 
-const Register = () => {
-    const { register, handleSubmit, watch, formState: { errors } } = useForm<Inputs>();
+const Login = () => {
+    const { register, handleSubmit, formState: { errors } } = useForm<Inputs>();
 
-    const onRegister: SubmitHandler<Inputs> = data => {
+    const onLogin: SubmitHandler<Inputs> = data => {
         console.log(data);
     };
 
@@ -23,8 +21,8 @@ const Register = () => {
                 <div className="row gy-5 row--30 justify-content-center">
                     <div className="col-lg-6">
                         <div className="rbt-contact-form contact-form-style-1 max-width-auto">
-                            <h3 className="title">Register</h3>
-                            <form onSubmit={handleSubmit(onRegister)} className="max-width-auto">
+                            <h3 className="title">Login</h3>
+                            <form onSubmit={handleSubmit(onLogin)} className="max-width-auto">
 
                                 <div className="form-group">
                                     <input
@@ -46,22 +44,7 @@ const Register = () => {
                                     {/* <span className="focus-border" /> */}
                                 </div>
 
-                                <div className="form-group">
-                                    <input
-                                        aria-invalid={errors.username ? "true" : "false"}
-                                        autoComplete='off'
-                                        type="number"
-                                        id="username"
-                                        {...register("username", {
-                                            required: 'Registration No. is required',
-                                            maxLength: { value: 30, message: 'Registration No. must not be greater than 30 characters' }
-                                        })
-                                        }
-                                    />
-                                    <label htmlFor="username">Registration No. *</label>
-                                    {errors.username && <span className="text-danger">{errors.username?.message}</span>}
-                                    {/* <span className="focus-border" /> */}
-                                </div>
+
 
                                 <div className="form-group">
                                     <input
@@ -79,31 +62,18 @@ const Register = () => {
                                     {errors.password && <span className="text-danger">{errors.password?.message}</span>}
                                 </div>
 
-                                <div className="form-group">
-                                    <input id="confirmPassword" type="password"
-                                        {...register("confirmPassword", {
-                                            required: 'Confirm Password is required',
-                                            validate: (value) => {
-                                                return value === watch('password') || "Passwords don't match.";
-                                            },
-                                            deps: ['password']
-                                        })
-                                        }
-                                    />
-                                    <label htmlFor="confirmPassword">Confirm Password *</label>
-                                    {errors.confirmPassword && <span className="text-danger">{errors.confirmPassword?.message}</span>}
-                                </div>
+
                                 <div className="form-submit-group">
                                     <button type="submit" className="rbt-btn btn-md btn-gradient hover-icon-reverse w-100">
                                         <span className="icon-reverse-wrapper">
-                                            <span className="btn-text">Register</span>
+                                            <span className="btn-text">Login</span>
                                             <span className="btn-icon"><i className="feather-arrow-right" /></span>
                                             <span className="btn-icon"><i className="feather-arrow-right" /></span>
                                         </span>
                                     </button>
                                 </div>
                             </form>
-                            <p className="b3 text-center mt--30">Already have an account? <Link className="rbt-btn-link" href='/login'>login</Link></p>
+                            <p className="b3 text-center mt--30">Doesn&apos;t have an account? <Link className="rbt-btn-link" href='/register'>register here</Link></p>
                         </div>
                     </div>
                 </div>
@@ -113,4 +83,4 @@ const Register = () => {
     )
 }
 
-export default Register
+export default Login;
