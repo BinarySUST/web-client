@@ -56,24 +56,24 @@ export default function StudentDashboardLayout({ children }: {
                                                     </div>
                                                     <nav className="mainmenu-nav">
                                                         <ul className="dashboard-mainmenu rbt-default-sidebar-list">
-                                                            <li><a href="student-dashboard.html"><i className="feather-home" /><span>Dashboard</span></a></li>
+                                                            <li><Link href="/dashboard"><i className="feather-home" /><span>Dashboard</span></Link></li>
                                                             <li><Link href="/dashboard/profile" className="active"><i className="feather-user" /><span>My Profile</span></Link></li>
-                                                            <li><a href="student-enrolled-courses.html"><i className="feather-book-open" /><span>Enrolled Courses</span></a></li>
-                                                            <li><a href="student-wishlist.html"><i className="feather-bookmark" /><span>Wishlist</span></a></li>
-                                                            <li><a href="student-reviews.html"><i className="feather-star" /><span>Reviews</span></a></li>
-                                                            <li><a href="student-my-quiz-attempts.html"><i className="feather-help-circle" /><span>My Quiz Attempts</span></a></li>
-                                                            <li><a href="student-order-history.html"><i className="feather-shopping-bag" /><span>Order History</span></a></li>
+
                                                         </ul>
                                                     </nav>
-                                                    <div className="section-title mt--40 mb--20">
-                                                        <h6 className="rbt-title-style-2">User</h6>
+                                                    <div>
+                                                        <div className="section-title mt--40 mb--20">
+                                                            <h6 className="rbt-title-style-2">User</h6>
+                                                        </div>
+                                                        <nav className="mainmenu-nav">
+                                                            <ul className="dashboard-mainmenu rbt-default-sidebar-list">
+                                                                <li><Link href="/dashboard/settings"><i className="feather-settings" /><span>Settings</span></Link></li>
+                                                                <li><a href="/"><i className="feather-log-out" /><span>Logout</span></a></li>
+                                                            </ul>
+                                                        </nav>
                                                     </div>
-                                                    <nav className="mainmenu-nav">
-                                                        <ul className="dashboard-mainmenu rbt-default-sidebar-list">
-                                                            <li><Link href="/dashboard/settings"><i className="feather-settings" /><span>Settings</span></Link></li>
-                                                            <li><a href="index.html"><i className="feather-log-out" /><span>Logout</span></a></li>
-                                                        </ul>
-                                                    </nav>
+
+
                                                 </div>
                                             </div>
                                         </div>
