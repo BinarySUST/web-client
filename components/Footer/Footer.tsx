@@ -13,7 +13,7 @@ const Footer = () => {
                             <div className="footer-widget">
                                 <div className="logo">
                                     <Link href="/">
-                                        <img src="assets/images/logo/logo.png" alt="Edu-cause" />
+                                        <img src="/assets/images/logo/logo.png" alt="Edu-cause" />
                                     </Link>
                                 </div>
                                 <p className="description mt--20">We’re always in search for talented

@@ -1,4 +1,5 @@
 /* eslint-disable @next/next/no-img-element */
+import Link from 'next/link'
 import Menus from './Menus'
 
 const Menu = () => {
@@ -27,11 +28,11 @@ const Menu = () => {
                                     <div className="inner">
                                         <div className="rbt-admin-profile">
                                             <div className="admin-thumbnail">
-                                                <img src="assets/images/team/avatar.jpg" alt="User Images" />
+                                                <img src="/assets/images/team/avatar.jpg" alt="User Images" />
                                             </div>
                                             <div className="admin-info">
                                                 <span className="name">Nipa Bali</span>
-                                                <a className="rbt-btn-link color-primary" href="profile.html">View Profile</a>
+                                                <Link className="rbt-btn-link color-primary" href="/dashboard/profile">View Profile</Link>
                                             </div>
                                         </div>
                                         <ul className="user-list-wrapper">
@@ -103,7 +104,7 @@ const Menu = () => {
                             <div className="rbt-card variation-01 rbt-hover">
                                 <div className="rbt-card-img">
                                     <a href="course-details.html">
-                                        <img src="assets/images/course/course-online-01.jpg" alt="Card image" />
+                                        <img src="/assets/images/course/course-online-01.jpg" alt="Card image" />
                                     </a>
                                 </div>
                                 <div className="rbt-card-body">
