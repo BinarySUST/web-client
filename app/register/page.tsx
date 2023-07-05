@@ -3,7 +3,7 @@ import Register from "@/modules/Register/Register";
 
 
 export const metadata = {
-    title: 'Register || Binary SUST',
+    title: 'Register | Binary SUST',
 };
 
 export default function RegisterPage() {

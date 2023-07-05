@@ -1,4 +1,10 @@
+import navigation from 'next/navigation'
+export const metadata = {
+    title: 'Dashboard | Binary SUST'
+}
+
 export default function StudentDashboardPage() {
+    console.log(navigation)
     return (
         <div className="rbt-dashboard-content bg-color-white rbt-shadow-box mb--60">
             <div className="content">
