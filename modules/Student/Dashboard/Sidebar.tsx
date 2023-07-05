@@ -1,7 +1,11 @@
+"use client";
+
 import Link from "next/link";
 import sidebarMenus from "./sidebarMenus";
+import { usePathname } from "next/navigation";
 
 export default function StudentDashboardSidebar() {
+    const pathname = usePathname();
 
     return (
         <div className="rbt-default-sidebar sticky-top rbt-shadow-box rbt-gradient-border">
@@ -14,7 +18,10 @@ export default function StudentDashboardSidebar() {
                         <nav className="mainmenu-nav">
                             <ul className="dashboard-mainmenu rbt-default-sidebar-list">
                                 {sidebarMenus.map(menu => (
-                                    <li key={menu.id}><Link href={menu.path} className={"active"}><i className={menu.icon} /><span>{menu.name}</span></Link></li>
+                                    <li key={menu.id}>
+                                        <Link href={menu.path} className={menu.path == pathname ? "active" : ''}><i className={menu.icon} /><span>{menu.name}</span>
+                                        </Link>
+                                    </li>
                                 ))}
                             </ul>
                         </nav>
